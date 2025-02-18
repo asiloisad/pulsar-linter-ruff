@@ -1,7 +1,7 @@
 {
   "name": "linter-ruff",
   "description": "A wrapper around Python linter called ruff",
-  "repository": "https://github.com/bacadra/pulsar-linter-ruff",
+  "repository": "https://github.com/asiloisad/pulsar-linter-ruff",
   "keywords": [
     "linter",
     "python",
