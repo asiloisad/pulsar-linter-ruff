@@ -38,5 +38,115 @@
   "dependencies": {
     "tmp": "^0.2.1"
   },
-  "linter-package": true
+  "linter-package": true,
+  "configSchema": {
+    "state": {
+      "order": 1,
+      "title": "Linter state",
+      "description": "Enable or disable the service of linter.",
+      "type": "boolean",
+      "default": true
+    },
+    "executable": {
+      "order": 2,
+      "title": "Path to executable",
+      "description": "Make sure `ruff` executable is available from command line.",
+      "type": "string",
+      "default": "ruff"
+    },
+    "pyVersion": {
+      "order": 3,
+      "title": "Python version",
+      "description": "The minimum Python version that should be supported.",
+      "type": "string",
+      "enum": [
+        { "value": "", "description": "Default" },
+        { "value": "py313", "description": "Python 3.13" },
+        { "value": "py312", "description": "Python 3.12" },
+        { "value": "py311", "description": "Python 3.11" },
+        { "value": "py310", "description": "Python 3.10" },
+        { "value": "py39", "description": "Python 3.9" },
+        { "value": "py38", "description": "Python 3.8" },
+        { "value": "py37", "description": "Python 3.7" }
+      ],
+      "default": ""
+    },
+    "select": {
+      "order": 4,
+      "title": "Rule selection: Select",
+      "description": "Comma-separated list of rule codes to enable or `ALL` to enable all rules. Leave empty if you want use configuration files.",
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "ignore": {
+      "order": 5,
+      "title": "Rule selection: Ignore",
+      "description": "Comma-separated list of rule codes to disable.",
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "fixable": {
+      "order": 6,
+      "title": "Rule selection: Fixable",
+      "description": "Comma-separated list of rule codes to treat as eligible for autofix.",
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "unfixable": {
+      "order": 7,
+      "title": "Rule selection: Unfixable",
+      "description": "Comma-separated list of rule codes to treat as ineligible for autofix.",
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "error": {
+      "order": 8,
+      "title": "Severity selection: Error",
+      "description": "Comma-separated list of rule codes to treat as error type.",
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "warning": {
+      "order": 9,
+      "title": "Severity selection: Warning",
+      "description": "Comma-separated list of rule codes to treat as warning type.",
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "info": {
+      "order": 10,
+      "title": "Severity selection: Info",
+      "description": "Comma-separated list of rule codes to treat as info type.",
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "useNoqa": {
+      "order": 11,
+      "title": "Use noqa flag",
+      "description": "Flag `# noqa` is used to silent linter messages per line.",
+      "type": "boolean",
+      "default": true
+    },
+    "addStar": {
+      "order": 12,
+      "title": "Unclassified flags marked by star",
+      "description": "Add star to all flags which user do not classified yet.",
+      "type": "boolean",
+      "default": true
+    },
+    "allowMagic": {
+      "order": 13,
+      "title": "Allow magic commands",
+      "description": "A bypass of magic commands e.g. `%timeit`, `_`.",
+      "type": "boolean",
+      "default": true
+    }
+  }
 }
