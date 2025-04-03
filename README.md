@@ -20,8 +20,8 @@ Ruff can attempt to automatically fix lint violations. List of rule codes to tre
 
 In `atom-workspace` there are available commands:
 
-- `linter-ruff:toggle-state`: config toggle of linter state
-- `linter-ruff:toggle-noqa`: config toggle of noqa setting
+- `linter-ruff:toggle-state`: toggle config of linter state
+- `linter-ruff:toggle-noqa`: toggle config of noqa setting
 - `linter-ruff:global-pyproject`: open ruff default config file
 
 In `atom-text-editor:not([mini])` there are available commands:
