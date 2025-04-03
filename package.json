@@ -16,7 +16,7 @@
     "pylint",
     "numpy"
   ],
-  "version": "1.1.2",
+  "version": "1.2.0",
   "license": "MIT",
   "engines": {
     "atom": ">=1.100.0 <2.0.0"
@@ -60,14 +60,38 @@
       "description": "The minimum Python version that should be supported.",
       "type": "string",
       "enum": [
-        { "value": "", "description": "Default" },
-        { "value": "py313", "description": "Python 3.13" },
-        { "value": "py312", "description": "Python 3.12" },
-        { "value": "py311", "description": "Python 3.11" },
-        { "value": "py310", "description": "Python 3.10" },
-        { "value": "py39", "description": "Python 3.9" },
-        { "value": "py38", "description": "Python 3.8" },
-        { "value": "py37", "description": "Python 3.7" }
+        {
+          "value": "",
+          "description": "Default"
+        },
+        {
+          "value": "py313",
+          "description": "Python 3.13"
+        },
+        {
+          "value": "py312",
+          "description": "Python 3.12"
+        },
+        {
+          "value": "py311",
+          "description": "Python 3.11"
+        },
+        {
+          "value": "py310",
+          "description": "Python 3.10"
+        },
+        {
+          "value": "py39",
+          "description": "Python 3.9"
+        },
+        {
+          "value": "py38",
+          "description": "Python 3.8"
+        },
+        {
+          "value": "py37",
+          "description": "Python 3.7"
+        }
       ],
       "default": ""
     },
@@ -76,7 +100,9 @@
       "title": "Rule selection: Select",
       "description": "Comma-separated list of rule codes to enable or `ALL` to enable all rules. Leave empty if you want use configuration files.",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "ignore": {
@@ -84,7 +110,9 @@
       "title": "Rule selection: Ignore",
       "description": "Comma-separated list of rule codes to disable.",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "fixable": {
@@ -92,7 +120,9 @@
       "title": "Rule selection: Fixable",
       "description": "Comma-separated list of rule codes to treat as eligible for autofix.",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "unfixable": {
@@ -100,7 +130,9 @@
       "title": "Rule selection: Unfixable",
       "description": "Comma-separated list of rule codes to treat as ineligible for autofix.",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "error": {
@@ -108,7 +140,9 @@
       "title": "Severity selection: Error",
       "description": "Comma-separated list of rule codes to treat as error type.",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "warning": {
@@ -116,7 +150,9 @@
       "title": "Severity selection: Warning",
       "description": "Comma-separated list of rule codes to treat as warning type.",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "info": {
@@ -124,7 +160,9 @@
       "title": "Severity selection: Info",
       "description": "Comma-separated list of rule codes to treat as info type.",
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "default": []
     },
     "useNoqa": {
