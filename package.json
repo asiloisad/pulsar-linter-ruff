@@ -35,9 +35,6 @@
       }
     }
   },
-  "dependencies": {
-    "tmp": "^0.2.1"
-  },
   "linter-package": true,
   "configSchema": {
     "state": {
@@ -186,5 +183,6 @@
       "type": "boolean",
       "default": true
     }
-  }
+  },
+  "dependencies": {}
 }
