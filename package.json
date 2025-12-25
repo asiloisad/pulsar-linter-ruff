@@ -62,6 +62,14 @@
           "description": "Default"
         },
         {
+          "value": "py315",
+          "description": "Python 3.15"
+        },
+        {
+          "value": "py314",
+          "description": "Python 3.14"
+        },
+        {
           "value": "py313",
           "description": "Python 3.13"
         },
