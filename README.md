@@ -18,21 +18,17 @@ Ruff can attempt to automatically fix lint violations. List of rule codes to tre
 
 ## Commands
 
-In `atom-workspace` there are available commands:
+Commands available in `atom-workspace`:
 
-- `linter-ruff:toggle-state`: toggle config of linter state
-- `linter-ruff:toggle-noqa`: toggle config of noqa setting
-- `linter-ruff:global-pyproject`: open ruff default config file
+- `linter-ruff:toggle-state`: toggle config of linter state,
+- `linter-ruff:toggle-noqa`: toggle config of noqa setting,
+- `linter-ruff:global-pyproject`: open ruff default config file.
 
-In `atom-text-editor:not([mini])` there are available commands:
+Commands available in `atom-text-editor[data-grammar="source python"]:not([mini])`:
 
-- `linter:lint`: run a linter manually (ref. [linter](https://github.com/steelbrain/linter))
-
-In `atom-text-editor[data-grammar="source python"]:not([mini])` there are available commands:
-
-- `linter-ruff:fix`: attempt to fix violations
-- `linter-ruff:format-editor`: format text of current text-editor
-- `linter-ruff:format-selected`: format selections of current text-editor
+- `linter-ruff:fix`: attempt to fix violations,
+- `linter-ruff:format-editor`: format text of current text-editor,
+- `linter-ruff:format-selected`: format selections of current text-editor.
 
 ## Settings
 
@@ -42,6 +38,6 @@ A default configuration `pyproject.toml` can be opened (and created if doesn't e
 
 The details of configuration file (e.g. commands, file discovery) can be found at ruff [config discovery](https://docs.astral.sh/ruff/configuration/#config-file-discovery).
 
-# Contributing
+## Contributing
 
 Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback’s welcome!
