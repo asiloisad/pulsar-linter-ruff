@@ -26,7 +26,7 @@ Commands available in `atom-workspace`:
 
 Commands available in `atom-text-editor[data-grammar="source python"]:not([mini])`:
 
-- `linter-ruff:fix`: attempt to fix violations,
+- `linter-ruff:fix-all`: attempt to fix violations,
 - `linter-ruff:format-editor`: format text of current text-editor,
 - `linter-ruff:format-selected`: format selections of current text-editor.
 

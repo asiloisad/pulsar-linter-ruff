@@ -191,6 +191,5 @@
       "type": "boolean",
       "default": true
     }
-  },
-  "dependencies": {}
+  }
 }
