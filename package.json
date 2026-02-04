@@ -28,6 +28,18 @@
     "django-atom:grammar-used",
     "atom-django:grammar-used"
   ],
+  "activationCommands": {
+    "atom-workspace": [
+      "linter-ruff:lint-project"
+    ]
+  },
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeIndie"
+      }
+    }
+  },
   "providedServices": {
     "linter": {
       "versions": {
