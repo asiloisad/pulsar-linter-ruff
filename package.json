@@ -22,6 +22,20 @@
     "atom": ">=1.100.0 <2.0.0"
   },
   "main": "./lib/main",
+  "activationHooks": [
+    "language-python:grammar-used",
+    "MagicPython:grammar-used",
+    "django-atom:grammar-used",
+    "atom-django:grammar-used"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "linter-ruff:toggle-state",
+      "linter-ruff:toggle-noqa",
+      "linter-ruff:lint-project",
+      "linter-ruff:global-pyproject"
+    ]
+  },
   "consumedServices": {
     "linter-indie": {
       "versions": {
