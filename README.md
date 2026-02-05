@@ -2,6 +2,8 @@
 
 A wrapper around Python linter called [ruff](https://github.com/astral-sh/ruff). Package used linter top-level API to visualize errors and other types of messages with ease.
 
+**Recommendation:** Use `linter-ruff` for CLI-based linting with custom severity mapping. Use [ide](https://github.com/asiloisad/pulsar-ide-ruff) version called `ide-ruff` for full IDE features.
+
 ## Installation
 
 To install `linter-ruff` search for [linter-ruff](https://web.pulsar-edit.dev/packages/linter-ruff) in the Install pane of the Pulsar settings or run `ppm install linter-ruff`. Alternatively, you can run `ppm install asiloisad/pulsar-linter-ruff` to install a package directly from the GitHub repository.
@@ -22,7 +24,8 @@ Commands available in `atom-workspace`:
 
 - `linter-ruff:toggle-state`: toggle config of linter state,
 - `linter-ruff:toggle-noqa`: toggle config of noqa setting,
-- `linter-ruff:global-pyproject`: open ruff default config file.
+- `linter-ruff:lint-project`: scan entire project for lint issues,
+- `linter-ruff:global-pyproject`: open ruff global config file.
 
 Commands available in `atom-text-editor[data-grammar="source python"]:not([mini])`:
 
