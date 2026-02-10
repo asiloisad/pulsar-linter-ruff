@@ -205,6 +205,13 @@
       "description": "A bypass of magic commands e.g. `%timeit`, `_`.",
       "type": "boolean",
       "default": true
+    },
+    "deleteOnOpen": {
+      "order": 14,
+      "title": "Delete Project Lint on File Open",
+      "description": "Delete project-wide lint messages for a file when it is opened in the editor. Restart needed.",
+      "type": "boolean",
+      "default": true
     }
   }
 }
