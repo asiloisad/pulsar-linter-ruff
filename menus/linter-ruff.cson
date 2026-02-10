@@ -1,0 +1,19 @@
+'menu': [
+  {
+    label: 'Packages'
+    submenu: [
+      {
+        label: 'Linter Ruff'
+        submenu: [
+          { label: 'Toggle State', command: 'linter-ruff:toggle-state' }
+          { label: 'Toggle Noqa', command: 'linter-ruff:toggle-noqa' }
+          { label: 'Lint Project', command: 'linter-ruff:lint-project' }
+          { label: 'Global Pyproject', command: 'linter-ruff:global-pyproject' }
+          { type: 'separator' }
+          { label: 'Fix All', command: 'linter-ruff:fix-all' }
+          { label: 'Format Editor', command: 'linter-ruff:format-editor' }
+        ]
+      }
+    ]
+  }
+]
