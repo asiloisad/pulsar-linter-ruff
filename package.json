@@ -59,10 +59,10 @@
       "type": "boolean",
       "default": true
     },
-    "executable": {
+    "ruffCommand": {
       "order": 2,
-      "title": "Path to executable",
-      "description": "Make sure `ruff` executable is available from command line.",
+      "title": "Ruff Command",
+      "description": "Command to run ruff. Can be a path or a multi-word command like `py -m ruff`. Leave as 'ruff' to use the one in your PATH.",
       "type": "string",
       "default": "ruff"
     },
