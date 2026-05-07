@@ -41,6 +41,11 @@
       "versions": {
         "2.0.0": "consumeIndie"
       }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
     }
   },
   "providedServices": {
