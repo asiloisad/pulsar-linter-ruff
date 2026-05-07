@@ -7,7 +7,8 @@
         submenu: [
           { label: 'Toggle State', command: 'linter-ruff:toggle-state' }
           { label: 'Toggle Noqa', command: 'linter-ruff:toggle-noqa' }
-          { label: 'Lint Project', command: 'linter-ruff:lint-project' }
+          { label: 'Lint Projects', command: 'linter-ruff:lint-projects' }
+          { label: 'Lint Selected', command: 'linter-ruff:lint-selected' }
           { label: 'Global Pyproject', command: 'linter-ruff:global-pyproject' }
           { type: 'separator' }
           { label: 'Fix All', command: 'linter-ruff:fix-all' }

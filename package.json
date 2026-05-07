@@ -32,7 +32,8 @@
     "atom-workspace": [
       "linter-ruff:toggle-state",
       "linter-ruff:toggle-noqa",
-      "linter-ruff:lint-project",
+      "linter-ruff:lint-projects",
+      "linter-ruff:lint-selected",
       "linter-ruff:global-pyproject"
     ]
   },
@@ -45,6 +46,11 @@
     "atom-ide-busy-signal": {
       "versions": {
         "0.1.0": "consumeBusySignal"
+      }
+    },
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
       }
     }
   },

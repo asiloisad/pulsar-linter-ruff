@@ -22,7 +22,8 @@ Commands available in `atom-workspace`:
 
 - `linter-ruff:toggle-state`: toggle config of linter state,
 - `linter-ruff:toggle-noqa`: toggle config of noqa setting,
-- `linter-ruff:lint-project`: scan entire project for lint issues,
+- `linter-ruff:lint-projects`: scan entire project for lint issues,
+- `linter-ruff:lint-selected`: scan selected tree-view files or folders for lint issues,
 - `linter-ruff:global-pyproject`: open ruff global config file.
 
 Commands available in `atom-text-editor[data-grammar="source python"]:not([mini])`:
