@@ -26,7 +26,9 @@
     "language-python:grammar-used",
     "MagicPython:grammar-used",
     "django-atom:grammar-used",
-    "atom-django:grammar-used"
+    "atom-django:grammar-used",
+    "jupyter-next:grammar-used",
+    "source.jupyter:root-scope-used"
   ],
   "activationCommands": {
     "atom-workspace": [

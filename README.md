@@ -2,6 +2,8 @@
 
 A wrapper around Python linter called [ruff](https://github.com/astral-sh/ruff). Package used linter top-level API to visualize errors and other types of messages with ease.
 
+Supports both `.py` files and Jupyter notebooks (`.ipynb`). In notebook mode, each code cell is linted individually and messages are mapped to the correct cell via [jupyter-next](https://github.com/asiloisad/pulsar-jupyter-next).
+
 ## Installation
 
 To install `linter-ruff` search for [linter-ruff](https://web.pulsar-edit.dev/packages/linter-ruff) in the Install pane of the Pulsar settings or run `ppm install linter-ruff`. Alternatively, you can run `ppm install asiloisad/pulsar-linter-ruff` to install a package directly from the GitHub repository.
